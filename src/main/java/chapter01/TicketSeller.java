@@ -7,7 +7,8 @@ public class TicketSeller {
         this.ticketOffice = ticketOffice;
     }
 
-    public TicketOffice getTicketOffice() {
-        return ticketOffice;
+    // Theater의 enter code를 자율성으로 위해 TicketSeller 내부에 숨겼다.
+    public void sellTo(Audience audience) {
+        ticketOffice.plusAmount(audience.buy(ticketOffice.getTicket()));
     }
 }
