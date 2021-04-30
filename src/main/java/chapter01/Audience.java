@@ -14,14 +14,20 @@ public class Audience {
         return bag;
     }
 
+    // Audience는 자율적인 존재임.
+    // Bag은 과거의 Audience처럼 스스로 자기 자신을 책임지지 않고 Audience에 의해
+    // 끌려다니는 수동적인 존재다. 이걸 자율적인 존재로 바꿔보자.
     public Long buy(Ticket ticket) {
-        if(bag.hasInvitation()) {
-            bag.setTicket(ticket);
-            return 0L;
-        }else {
-            bag.setTicket(ticket);
-            bag.minusAmount(ticket.getFee());
-            return ticket.getFee();
-        }
+//        이 코드를 Bag으로 옮길 것 이다.
+//        if(bag.hasInvitation()) {
+//            bag.setTicket(ticket);
+//            return 0L;
+//        }else {
+//            bag.setTicket(ticket);
+//            bag.minusAmount(ticket.getFee());
+//            return ticket.getFee();
+//        }
+
+        return bag.hold(ticket);
     }
 }
