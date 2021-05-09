@@ -22,7 +22,7 @@ public class Screening {
     }
 
     public Money getMovieFee() {
-        return movie.getFree();
+        return movie.getFee();
     }
 
     public Reservation reserve(Customer customer, int audienceCount) {
