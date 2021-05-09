@@ -1,4 +1,4 @@
-package chapter02;
+package movie_project;
 
 public class Reservation {
     private Customer customer;
