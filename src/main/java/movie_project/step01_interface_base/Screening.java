@@ -1,7 +1,10 @@
-package movie_project;
+package movie_project.step01_interface_base;
+
+import lombok.Data;
 
 import java.time.LocalDateTime;
 
+@Data
 public class Screening {
     private Movie movie;
     private int sequence;

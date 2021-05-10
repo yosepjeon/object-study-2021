@@ -1,13 +1,12 @@
 package chapter02;
 
 
-import movie_project.Money;
-import movie_project.Movie;
+import movie_project.step01_interface_base.Money;
+import movie_project.step01_interface_base.Movie;
 import movie_project.pricing.AmountDiscountPolicy;
 import movie_project.pricing.PercentDiscountPolicy;
 import movie_project.pricing.PeriodCondition;
 import movie_project.pricing.SequenceCondition;
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 import java.time.DayOfWeek;
@@ -30,7 +29,8 @@ public class Chapter02Test {
                 )
         );
 
-        System.out.println(avatar);
+        System.out.println(avatar.getTitle());
+        System.out.println(avatar.getFee());
 
         Movie titanic = new Movie(
                 "타이타닉",
@@ -43,5 +43,8 @@ public class Chapter02Test {
                         new PeriodCondition(DayOfWeek.THURSDAY, LocalTime.of(10, 0), LocalTime.of(13, 59))
                 )
         );
+
+        System.out.println(titanic.getTitle());
+        System.out.println(titanic.getFee());
     }
 }

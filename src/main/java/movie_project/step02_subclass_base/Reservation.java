@@ -1,5 +1,8 @@
-package movie_project;
+package movie_project.step02_subclass_base;
 
+import lombok.Data;
+
+@Data
 public class Reservation {
     private Customer customer;
     private Screening screening;

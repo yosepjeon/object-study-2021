@@ -1,7 +1,7 @@
-package movie_project.pricing;
+package movie_project.step02_subclass_base.pricing;
 
-import movie_project.DiscountCondition;
-import movie_project.Screening;
+import movie_project.step02_subclass_base.DiscountCondition;
+import movie_project.step02_subclass_base.Screening;
 
 public class SequenceCondition implements DiscountCondition {
     private int sequence;

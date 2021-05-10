@@ -1,11 +1,8 @@
-package movie_project.pricing;
+package movie_project.step02_subclass_base.pricing;
 
-import movie_project.DiscountCondition;
-import movie_project.DiscountPolicy;
-import movie_project.Money;
-import movie_project.Screening;
+import movie_project.step02_subclass_base.*;
 
-public class PercentDiscountPolicy extends DiscountPolicy {
+public class PercentDiscountPolicy extends DefaultDiscountPolicy {
     private double percent;
 
     public PercentDiscountPolicy(double percent, DiscountCondition... conditions) {

@@ -1,7 +1,7 @@
 package movie_project.pricing;
 
-import movie_project.DiscountCondition;
-import movie_project.Screening;
+import movie_project.step01_interface_base.DiscountCondition;
+import movie_project.step01_interface_base.Screening;
 
 import java.time.DayOfWeek;
 import java.time.LocalTime;

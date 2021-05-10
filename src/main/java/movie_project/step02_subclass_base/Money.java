@@ -1,7 +1,10 @@
-package movie_project;
+package movie_project.step02_subclass_base;
+
+import lombok.Data;
 
 import java.math.BigDecimal;
 
+@Data
 public class Money {
     public static final Money ZERO = Money.wons(0);
 

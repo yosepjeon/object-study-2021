@@ -1,8 +1,8 @@
 package movie_project.pricing;
 
-import movie_project.DiscountPolicy;
-import movie_project.Money;
-import movie_project.Screening;
+import movie_project.step01_interface_base.DiscountPolicy;
+import movie_project.step01_interface_base.Money;
+import movie_project.step01_interface_base.Screening;
 
 public class NoneDiscountPolicy extends DiscountPolicy {
     @Override
